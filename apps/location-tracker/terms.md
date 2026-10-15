@@ -4,7 +4,7 @@ _Last updated: October 15, 2026_
 
 [Русская версия ниже](#условия-использования)
 
-These Terms of Use ("Terms") govern your use of **Location Tracker** (the "App") published by **bnsoftware** ("we", "us"). By downloading or using the App you agree to these Terms. The App is also licensed to you under Apple's [Licensed Application End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) (the "Apple EULA"). If these Terms and the Apple EULA conflict, the Apple EULA prevails to the extent required by Apple.
+These Terms of Use ("Terms") govern your use of **Location Tracker** (the "App") published by **Ilya Bachkou** under the bnsoftware brand ("we", "us"). By downloading or using the App you agree to these Terms. The App is also licensed to you under Apple's [Licensed Application End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) (the "Apple EULA"). If these Terms and the Apple EULA conflict, the Apple EULA prevails to the extent required by Apple.
 
 ## What the App does
 
@@ -29,11 +29,11 @@ Do not misuse the App, interfere with its operation, or reverse engineer it exce
 
 ## Intellectual property
 
-The App, its design and content belong to bnsoftware. Country borders are derived from [Natural Earth](https://www.naturalearthdata.com) (public domain). Your data stays yours.
+The App, its design and content belong to Ilya Bachkou. Country borders are derived from [Natural Earth](https://www.naturalearthdata.com) (public domain). Your data stays yours.
 
 ## Disclaimer and limitation of liability
 
-The App is provided "as is" and "as available", without warranties of any kind, to the extent permitted by law. To the maximum extent permitted by law, bnsoftware is not liable for any indirect, incidental or consequential damages, including fines, taxes, penalties or visa issues, arising from your use of the App.
+The App is provided "as is" and "as available", without warranties of any kind, to the extent permitted by law. To the maximum extent permitted by law, we are not liable for any indirect, incidental or consequential damages, including fines, taxes, penalties or visa issues, arising from your use of the App.
 
 ## Changes
 
@@ -41,11 +41,11 @@ We may update these Terms. The date above shows the latest version. Continued us
 
 ## Governing law
 
-These Terms are governed by the laws of TODO_COUNTRY, except where the law of your country of residence gives you rights that cannot be waived.
+These Terms are governed by the laws of the Slovak Republic, except where the law of your country of residence gives you rights that cannot be waived.
 
 ## Contact us
 
-Questions about these Terms: TODO_EMAIL.
+Questions about these Terms: ilyabochkovib@gmail.com.
 
 ---
 
@@ -53,7 +53,7 @@ Questions about these Terms: TODO_EMAIL.
 
 _Обновлено: 15 октября 2026 г._
 
-Эти Условия использования («Условия») регулируют использование приложения **Location Tracker** («Приложение») от **bnsoftware** («мы»). Скачивая или используя Приложение, вы принимаете эти Условия. Приложение также предоставляется вам по [Лицензионному соглашению Apple с конечным пользователем](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) («Apple EULA»). При противоречии между этими Условиями и Apple EULA приоритет имеет Apple EULA в той мере, в какой этого требует Apple.
+Эти Условия использования («Условия») регулируют использование приложения **Location Tracker** («Приложение») от **Ilya Bachkou** под брендом bnsoftware («мы»). Скачивая или используя Приложение, вы принимаете эти Условия. Приложение также предоставляется вам по [Лицензионному соглашению Apple с конечным пользователем](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) («Apple EULA»). При противоречии между этими Условиями и Apple EULA приоритет имеет Apple EULA в той мере, в какой этого требует Apple.
 
 ## Что делает Приложение
 
@@ -78,11 +78,11 @@ _Обновлено: 15 октября 2026 г._
 
 ## Интеллектуальная собственность
 
-Приложение, его дизайн и содержимое принадлежат bnsoftware. Границы стран основаны на данных [Natural Earth](https://www.naturalearthdata.com) (общественное достояние). Ваши данные остаются вашими.
+Приложение, его дизайн и содержимое принадлежат Ilya Bachkou. Границы стран основаны на данных [Natural Earth](https://www.naturalearthdata.com) (общественное достояние). Ваши данные остаются вашими.
 
 ## Отказ от гарантий и ограничение ответственности
 
-Приложение предоставляется «как есть» и «по мере доступности», без каких-либо гарантий, в пределах, допустимых законом. В максимально допустимой законом степени bnsoftware не несёт ответственности за косвенные, случайные или последующие убытки, включая штрафы, налоги, пени или визовые проблемы, связанные с использованием Приложения.
+Приложение предоставляется «как есть» и «по мере доступности», без каких-либо гарантий, в пределах, допустимых законом. В максимально допустимой законом степени мы не несём ответственности за косвенные, случайные или последующие убытки, включая штрафы, налоги, пени или визовые проблемы, связанные с использованием Приложения.
 
 ## Изменения
 
@@ -90,8 +90,8 @@ _Обновлено: 15 октября 2026 г._
 
 ## Применимое право
 
-Эти Условия регулируются законодательством TODO_COUNTRY, кроме случаев, когда право страны вашего проживания даёт вам права, от которых нельзя отказаться.
+Эти Условия регулируются законодательством Словацкой Республики, кроме случаев, когда право страны вашего проживания даёт вам права, от которых нельзя отказаться.
 
 ## Контакты
 
-Вопросы об этих Условиях: TODO_EMAIL.
+Вопросы об этих Условиях: ilyabochkovib@gmail.com.

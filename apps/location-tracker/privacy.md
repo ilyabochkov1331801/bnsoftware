@@ -4,7 +4,7 @@ _Last updated: October 15, 2026_
 
 [Русская версия ниже](#политика-конфиденциальности)
 
-This Privacy Policy explains how **Location Tracker** (the "App"), published by **bnsoftware** ("we", "us"), handles your information.
+This Privacy Policy explains how **Location Tracker** (the "App"), published by **Ilya Bachkou** under the bnsoftware brand ("we", "us"), handles your information.
 
 **In short: the App works entirely on your iPhone. We do not collect, receive or store any of your data, and nothing is sent to our servers.**
 
@@ -34,6 +34,10 @@ The App is free. Optional Pro features are available as an auto-renewable subscr
 
 Use **Settings → Delete all data** in the App, or delete the App from your iPhone. Since we never receive your data, there is nothing for us to delete on our side. You can turn off location access at any time in iOS Settings → Privacy & Security → Location Services.
 
+## Your rights (EU/EEA)
+
+If you are in the EU or EEA, the GDPR gives you rights over your personal data, such as access and erasure. Because the App keeps your data only on your device and we never receive it, you can exercise these rights directly in the App (see "Deleting your data"). For any question, contact us below.
+
 ## Children
 
 The App is not directed at children under 13.
@@ -44,7 +48,7 @@ If the App starts handling data differently, we will update this page and the da
 
 ## Contact us
 
-Questions about privacy: TODO_EMAIL.
+Questions about privacy: ilyabochkovib@gmail.com.
 
 ---
 
@@ -52,7 +56,7 @@ Questions about privacy: TODO_EMAIL.
 
 _Обновлено: 15 октября 2026 г._
 
-Эта политика описывает, как приложение **Location Tracker** («Приложение») от **bnsoftware** («мы») обращается с вашими данными.
+Эта политика описывает, как приложение **Location Tracker** («Приложение») от **Ilya Bachkou** под брендом bnsoftware («мы») обращается с вашими данными.
 
 **Коротко: Приложение работает полностью на вашем iPhone. Мы не собираем, не получаем и не храним ваши данные, и ничего не отправляется на наши серверы.**
 
@@ -82,6 +86,10 @@ _Обновлено: 15 октября 2026 г._
 
 Нажмите **Настройки → Удалить все данные** в Приложении или удалите Приложение с iPhone. Мы не получаем ваши данные, поэтому с нашей стороны удалять нечего. Доступ к геопозиции можно отключить в любой момент: Настройки iOS → Конфиденциальность и безопасность → Службы геолокации.
 
+## Ваши права (ЕС/ЕЭЗ)
+
+Если вы находитесь в ЕС или ЕЭЗ, GDPR даёт вам права на ваши персональные данные, например на доступ и удаление. Приложение хранит данные только на вашем устройстве, и мы их не получаем, поэтому эти права вы реализуете прямо в Приложении (см. «Удаление данных»). По любым вопросам пишите нам.
+
 ## Дети
 
 Приложение не предназначено для детей младше 13 лет.
@@ -92,4 +100,4 @@ _Обновлено: 15 октября 2026 г._
 
 ## Контакты
 
-Вопросы о конфиденциальности: TODO_EMAIL.
+Вопросы о конфиденциальности: ilyabochkovib@gmail.com.
