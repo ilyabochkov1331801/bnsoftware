@@ -190,7 +190,7 @@ def page(site, *, title, body, depth, description=""):
 <link rel="stylesheet" href="{up}style.css">
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="brand" href="{home}">{company}</a></div></header>
+<header class="site"><div class="wrap"><a class="brand" href="{home}">{company}</a><nav class="nav"><a href="{home}#apps">Our apps</a></nav></div></header>
 <main><div class="wrap">
 {body}
 </div></main>
@@ -209,6 +209,20 @@ def icon_html(app, prefix):
 def doc_links(app, prefix):
     return "".join(
         f'<a class="pill" href="{prefix}{key}/">{esc(DOCS[key])}</a>' for key in app["docs"])
+
+
+def store_html(app):
+    """Ссылка на App Store или пометка «скоро», если store_url не задан."""
+    if app["store_url"]:
+        return f'<a class="pill store" href="{esc(app["store_url"])}">App Store</a>'
+    return '<span class="soon">Coming soon to the App Store · Скоро в App Store</span>'
+
+
+def descriptions(app, cls=""):
+    out = f'<p class="{cls}">{esc(app["description"])}</p>' if app["description"] else ""
+    if app["description_ru"]:
+        out += f'<p class="{cls} ru" lang="ru">{esc(app["description_ru"])}</p>'
+    return out
 
 
 def read_doc(path):
@@ -254,6 +268,8 @@ def load_apps():
             "dir": folder,
             "name": meta.get("name") or folder.name.replace("-", " ").title(),
             "description": meta.get("description", ""),
+            "description_ru": meta.get("description_ru", ""),
+            "store_url": meta.get("store_url", ""),
             "icon": next((i for i in ICONS if (folder / i).exists()), None),
             "docs": docs,
         })
@@ -274,6 +290,8 @@ def build():
     OUT.mkdir()
     shutil.copy(ROOT / "style.css", OUT / "style.css")
     (OUT / ".nojekyll").touch()
+    if (ROOT / "_redirects").exists():  # Cloudflare Pages redirects
+        shutil.copy(ROOT / "_redirects", OUT / "_redirects")
 
     # Главная: список приложений
     if apps:
@@ -282,11 +300,14 @@ def build():
   <a href="{a['slug']}/">{icon_html(a, a['slug'] + '/')}</a>
   <div class="app-body">
     <h2><a href="{a['slug']}/">{esc(a['name'])}</a></h2>
-    {f"<p>{esc(a['description'])}</p>" if a['description'] else ""}
-    <div class="links">{doc_links(a, a['slug'] + '/')}</div>
+    {descriptions(a)}
+    <div class="links">{doc_links(a, a['slug'] + '/')}{store_html(a)}</div>
   </div>
 </article>""" for a in apps)
-        listing = f'<section class="apps">{cards}</section>'
+        listing = f'''<section id="apps">
+<h2 class="section-title">Our apps <span lang="ru">· Наши приложения</span></h2>
+<div class="apps">{cards}</div>
+</section>'''
     else:
         listing = '<p class="empty">Пока нет ни одного приложения — добавьте папку в apps/.</p>'
     write(OUT / "index.html", page(
@@ -310,9 +331,9 @@ def build():
             body=f"""<nav class="crumbs"><a href="../">{esc(company)}</a></nav>
 <div class="app-head">{icon_html(app, '')}<div>
 <h1>{esc(name)}</h1>
-{f'<p class="lead">{esc(app["description"])}</p>' if app['description'] else ''}
+{descriptions(app, "lead")}
 </div></div>
-<div class="links big">{doc_links(app, '')}</div>"""))
+<div class="links big">{doc_links(app, '')}{store_html(app)}</div>"""))
 
         # Документы
         for key, path in app["docs"].items():

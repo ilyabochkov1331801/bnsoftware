@@ -4,7 +4,7 @@ _Last updated: October 15, 2026_
 
 [Русская версия ниже](#условия-использования)
 
-These Terms of Use ("Terms") govern your use of **Location Tracker** (the "App") published by **Ilya Bachkou** under the bnsoftware brand ("we", "us"). By downloading or using the App you agree to these Terms. The App is also licensed to you under Apple's [Licensed Application End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) (the "Apple EULA"). If these Terms and the Apple EULA conflict, the Apple EULA prevails to the extent required by Apple.
+These Terms of Use ("Terms") govern your use of **Daystamp** (the "App") published by **Ilya Bachkou** under the bnsoftware brand ("we", "us"). By downloading or using the App you agree to these Terms. The App is also licensed to you under Apple's [Licensed Application End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) (the "Apple EULA"). If these Terms and the Apple EULA conflict, the Apple EULA prevails to the extent required by Apple.
 
 ## What the App does
 
@@ -53,7 +53,7 @@ Questions about these Terms: ilyabochkovib@gmail.com.
 
 _Обновлено: 15 октября 2026 г._
 
-Эти Условия использования («Условия») регулируют использование приложения **Location Tracker** («Приложение») от **Ilya Bachkou** под брендом bnsoftware («мы»). Скачивая или используя Приложение, вы принимаете эти Условия. Приложение также предоставляется вам по [Лицензионному соглашению Apple с конечным пользователем](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) («Apple EULA»). При противоречии между этими Условиями и Apple EULA приоритет имеет Apple EULA в той мере, в какой этого требует Apple.
+Эти Условия использования («Условия») регулируют использование приложения **Daystamp** («Приложение») от **Ilya Bachkou** под брендом bnsoftware («мы»). Скачивая или используя Приложение, вы принимаете эти Условия. Приложение также предоставляется вам по [Лицензионному соглашению Apple с конечным пользователем](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) («Apple EULA»). При противоречии между этими Условиями и Apple EULA приоритет имеет Apple EULA в той мере, в какой этого требует Apple.
 
 ## Что делает Приложение
 

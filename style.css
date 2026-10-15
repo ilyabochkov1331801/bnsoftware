@@ -41,6 +41,9 @@ a { color: var(--accent); }
 
 header.site { border-bottom: 1px solid var(--border); }
 header.site .wrap { display: flex; align-items: center; height: 60px; }
+.nav { margin-left: auto; font-size: 15px; }
+.nav a { color: var(--muted); text-decoration: none; }
+.nav a:hover { color: var(--text); }
 .brand { font-weight: 700; font-size: 18px; letter-spacing: -0.02em; color: var(--text); text-decoration: none; }
 
 main { flex: 1; padding: 48px 0 72px; }
@@ -58,6 +61,11 @@ h1 {
 .empty { color: var(--muted); }
 
 /* Список приложений */
+.section-title { font-size: 22px; letter-spacing: -0.01em; margin: 8px 0 16px; }
+.section-title span { color: var(--muted); font-weight: 500; }
+.app p.ru, .lead.ru { margin-top: 2px; font-size: 14px; }
+.lead.ru { margin-bottom: 28px; }
+.soon { align-self: center; color: var(--muted); font-size: 13px; }
 .apps { display: grid; gap: 12px; }
 .app {
   display: flex;
@@ -81,7 +89,7 @@ h1 {
   flex: none;
   display: grid;
   place-items: center;
-  border-radius: 13px;
+  border-radius: 22.5%;
   object-fit: cover;
   background: var(--accent-soft);
   color: var(--accent);
@@ -105,7 +113,7 @@ h1 {
 
 /* Страница приложения */
 .app-head { display: flex; gap: 18px; align-items: flex-start; margin-bottom: 8px; }
-.app-head .icon { width: 64px; height: 64px; border-radius: 16px; font-size: 28px; margin-top: 4px; }
+.app-head .icon { width: 64px; height: 64px; font-size: 28px; margin-top: 4px; }
 .app-head .lead { margin-bottom: 28px; }
 
 /* Документ */
@@ -143,7 +151,7 @@ footer.site a { color: inherit; }
 @media (max-width: 480px) {
   main { padding-top: 32px; }
   .app { padding: 14px; gap: 12px; }
-  .icon { width: 44px; height: 44px; border-radius: 11px; font-size: 19px; }
+  .icon { width: 44px; height: 44px; font-size: 19px; }
 }
 
 @media print {
@@ -151,3 +159,4 @@ footer.site a { color: inherit; }
   body { background: #fff; color: #000; }
   main { padding: 0; }
 }
+.app-head .lead:has(+ .lead.ru) { margin-bottom: 4px; }

@@ -9,7 +9,8 @@
 site.json                 название компании, контактный e-mail, язык
 apps/
   my-app/                 одна папка = одно приложение (имя папки = адрес на сайте)
-    app.json              название и описание (необязательно)
+    app.json              название, описание (description, description_ru) и ссылка на App Store
+                          (store_url; пока пусто — показывается «Coming soon to the App Store»)
     privacy.md            Privacy Policy   (или privacy.html)
     terms.md              Terms of Use     (или terms.html)
     icon.png              иконка (необязательно; .png/.jpg/.webp/.svg)
