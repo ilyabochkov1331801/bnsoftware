@@ -1,6 +1,6 @@
-# bnsoftware — legal
+# B&N Software
 
-Простой статический сайт с Privacy Policy и Terms of Use для мини-приложений bnsoftware.
+Простой статический сайт с Privacy Policy и Terms of Use для мини-приложений B&N Software.
 Без фреймворков и зависимостей: документы пишутся в Markdown, скрипт `build.py` собирает из них HTML.
 
 ## Как устроено

@@ -311,12 +311,9 @@ def build():
     else:
         listing = '<p class="empty">Пока нет ни одного приложения — добавьте папку в apps/.</p>'
     write(OUT / "index.html", page(
-        site, depth=0, title=f"Legal — {company}",
-        description=f"Privacy policies and terms of use for apps by {company}.",
-        body=f"""<p class="eyebrow">{esc(company)}</p>
-<h1>Privacy policies &amp; terms</h1>
-<p class="lead">Legal documents for the apps made by {esc(company)}.</p>
-{listing}"""))
+        site, depth=0, title=company,
+        description=f"Apps by {company}: privacy policies and terms of use.",
+        body=listing))
 
     for app in apps:
         slug, name = app["slug"], app["name"]

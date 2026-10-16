@@ -4,7 +4,7 @@ _Last updated: October 15, 2026_
 
 [Русская версия ниже](#политика-конфиденциальности)
 
-This Privacy Policy explains how **Daystamp** (the "App"), published by **Ilya Bachkou** under the bnsoftware brand ("we", "us"), handles your information.
+This Privacy Policy explains how **Daystamp** (the "App"), published by **B&N Software** ("we", "us"), handles your information.
 
 **In short: the App works entirely on your iPhone. We do not collect, receive or store any of your data, and nothing is sent to our servers.**
 
@@ -56,7 +56,7 @@ Questions about privacy: ilyabochkovib@gmail.com.
 
 _Обновлено: 15 октября 2026 г._
 
-Эта политика описывает, как приложение **Daystamp** («Приложение») от **Ilya Bachkou** под брендом bnsoftware («мы») обращается с вашими данными.
+Эта политика описывает, как приложение **Daystamp** («Приложение») от **B&N Software** («мы») обращается с вашими данными.
 
 **Коротко: Приложение работает полностью на вашем iPhone. Мы не собираем, не получаем и не храним ваши данные, и ничего не отправляется на наши серверы.**
 

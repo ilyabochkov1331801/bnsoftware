@@ -4,7 +4,7 @@ _Last updated: October 15, 2026_
 
 [Русская версия ниже](#условия-использования)
 
-These Terms of Use ("Terms") govern your use of **Daystamp** (the "App") published by **Ilya Bachkou** under the bnsoftware brand ("we", "us"). By downloading or using the App you agree to these Terms. The App is also licensed to you under Apple's [Licensed Application End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) (the "Apple EULA"). If these Terms and the Apple EULA conflict, the Apple EULA prevails to the extent required by Apple.
+These Terms of Use ("Terms") govern your use of **Daystamp** (the "App") published by **B&N Software** ("we", "us"). By downloading or using the App you agree to these Terms. The App is also licensed to you under Apple's [Licensed Application End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) (the "Apple EULA"). If these Terms and the Apple EULA conflict, the Apple EULA prevails to the extent required by Apple.
 
 ## What the App does
 
@@ -29,7 +29,7 @@ Do not misuse the App, interfere with its operation, or reverse engineer it exce
 
 ## Intellectual property
 
-The App, its design and content belong to Ilya Bachkou. Country borders are derived from [Natural Earth](https://www.naturalearthdata.com) (public domain). Your data stays yours.
+The App, its design and content belong to B&N Software. Country borders are derived from [Natural Earth](https://www.naturalearthdata.com) (public domain). Your data stays yours.
 
 ## Disclaimer and limitation of liability
 
@@ -53,7 +53,7 @@ Questions about these Terms: ilyabochkovib@gmail.com.
 
 _Обновлено: 15 октября 2026 г._
 
-Эти Условия использования («Условия») регулируют использование приложения **Daystamp** («Приложение») от **Ilya Bachkou** под брендом bnsoftware («мы»). Скачивая или используя Приложение, вы принимаете эти Условия. Приложение также предоставляется вам по [Лицензионному соглашению Apple с конечным пользователем](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) («Apple EULA»). При противоречии между этими Условиями и Apple EULA приоритет имеет Apple EULA в той мере, в какой этого требует Apple.
+Эти Условия использования («Условия») регулируют использование приложения **Daystamp** («Приложение») от **B&N Software** («мы»). Скачивая или используя Приложение, вы принимаете эти Условия. Приложение также предоставляется вам по [Лицензионному соглашению Apple с конечным пользователем](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) («Apple EULA»). При противоречии между этими Условиями и Apple EULA приоритет имеет Apple EULA в той мере, в какой этого требует Apple.
 
 ## Что делает Приложение
 
@@ -78,7 +78,7 @@ _Обновлено: 15 октября 2026 г._
 
 ## Интеллектуальная собственность
 
-Приложение, его дизайн и содержимое принадлежат Ilya Bachkou. Границы стран основаны на данных [Natural Earth](https://www.naturalearthdata.com) (общественное достояние). Ваши данные остаются вашими.
+Приложение, его дизайн и содержимое принадлежат B&N Software. Границы стран основаны на данных [Natural Earth](https://www.naturalearthdata.com) (общественное достояние). Ваши данные остаются вашими.
 
 ## Отказ от гарантий и ограничение ответственности
 
