@@ -45,7 +45,7 @@ These Terms are governed by the laws of the Slovak Republic, except where the la
 
 ## Contact us
 
-Questions about these Terms: ilyabochkovib@gmail.com.
+Questions about these Terms: support@bnsoftware.org.
 
 ---
 
@@ -94,4 +94,4 @@ _Обновлено: 15 октября 2026 г._
 
 ## Контакты
 
-Вопросы об этих Условиях: ilyabochkovib@gmail.com.
+Вопросы об этих Условиях: support@bnsoftware.org.

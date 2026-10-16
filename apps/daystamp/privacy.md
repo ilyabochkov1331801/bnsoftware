@@ -48,7 +48,7 @@ If the App starts handling data differently, we will update this page and the da
 
 ## Contact us
 
-Questions about privacy: ilyabochkovib@gmail.com.
+Questions about privacy: support@bnsoftware.org.
 
 ---
 
@@ -100,4 +100,4 @@ _Обновлено: 15 октября 2026 г._
 
 ## Контакты
 
-Вопросы о конфиденциальности: ilyabochkovib@gmail.com.
+Вопросы о конфиденциальности: support@bnsoftware.org.
