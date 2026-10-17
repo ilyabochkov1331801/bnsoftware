@@ -2,48 +2,68 @@
 
 _Last updated: October 17, 2026_
 
-This Privacy Policy explains how **Cuppa** (the "App"), published by **B&N Software** ("we", "us"), handles your information.
+This Privacy Policy explains how **Cuppa** (the "App") handles information. The App is published by **B&N Software** ("we", "us", "our"). You can reach us at support@bnsoftware.org.
 
-**In short: the App works entirely on your iPhone. We do not collect, receive or store any of your data, and nothing is sent to our servers.**
+**In short: the App works entirely on your iPhone. We do not collect, receive or store any personal data from the App, and the App sends nothing to us or to anyone else.**
 
-## What the App processes
+## 1. Data processed on your device
 
-- **Drinks you log.** For each drink the App stores the time, the drink, its caffeine, volume and approximate calories. This record is kept in the App's storage on your iPhone and is shared only with the App's own widget, so the widget can show your cup and add drinks.
-- **Custom drinks and settings.** Your own recipes, daily caffeine limit, cup style, widget buttons and similar settings are stored on your device.
-- **Estimates.** Statistics, the estimate of caffeine in your body and calorie totals are calculated on your device from the drinks you logged.
+The App stores the following only on your device, in storage that belongs to the App and is shared with nothing except the App's own widget:
 
-The App does not use your location, contacts, photos, camera, microphone or Apple Health.
+- **Drinks you log:** the date and time, the drink, its caffeine content, volume and approximate calories.
+- **Your custom drinks and settings:** your recipes, daily caffeine limit, cup style, widget buttons and similar preferences.
+- **Calculated values:** statistics, calorie totals and the estimate of caffeine in your body are calculated on your device from the drinks you logged.
 
-## What we do not do
+This information may say something about your eating and drinking habits. It never leaves your device and we never receive it. You decide what to log, and you can delete it at any time (see section 6).
 
-- We do not have accounts, servers or a database. Your data never reaches us.
-- We do not use analytics, advertising, tracking or any third-party SDKs.
-- We do not sell or share your data with anyone.
+The App does **not** access your location, contacts, photos, camera, microphone, Apple Health or advertising identifier, and it does not need the internet to work.
 
-## Purchases
+## 2. What we do not do
 
-The App is free. Optional Pro features are available as an auto-renewable subscription or a one-time purchase through Apple's App Store. Payments are processed by Apple; we do not receive your name, payment details or Apple ID. Apple's handling of your data is described in [Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
+- We have no accounts, servers or databases for the App.
+- We do not use analytics, crash reporting, advertising, tracking or third-party SDKs.
+- We do not sell, rent or share personal data, and we do not track you across apps or websites.
 
-## Backups
+## 3. Services provided by Apple
 
-The App's data may be included in your iCloud or computer **backups** of the iPhone, according to your own backup settings. This is controlled by Apple and by you, not by us.
+Some features rely on Apple, which handles data as an independent controller under its own terms and privacy policy, not on our behalf:
 
-## Deleting your data
+- **Purchases.** Pro is sold through the App Store. Apple processes the payment; we do not receive your name, payment details or Apple ID. The App only asks the App Store, on your device, whether Pro is active.
+- **Widgets and Shortcuts.** The widget and the "Add Drink" action run on your device as part of iOS.
+- **Backups.** Depending on your settings, the App's data may be included in your iCloud or computer backups of the device.
 
-Use **Settings → Delete All History** in the App, or delete the App from your iPhone. Since we never receive your data, there is nothing for us to delete on our side.
+See [Apple's Privacy Policy](https://www.apple.com/legal/privacy/) for details.
 
-## Your rights (EU/EEA)
+## 4. If you contact us
 
-If you are in the EU or EEA, the GDPR gives you rights over your personal data, such as access and erasure. Because the App keeps your data only on your device and we never receive it, you can exercise these rights directly in the App (see "Deleting your data"). For any question, contact us below.
+If you write to support@bnsoftware.org, we receive your email address and whatever you include in your message. We use this only to answer you, based on our legitimate interest in replying to your request (Art. 6(1)(f) GDPR). We keep the correspondence only as long as needed to handle your request and in any case no longer than 2 years, unless the law requires us to keep it longer. We do not share it with anyone except the provider of our email service, which stores it on our behalf.
 
-## Children
+## 5. Our website
 
-The App is not directed at children under 13.
+Our website bnsoftware.org, where this policy is published, does not use cookies, analytics or tracking. It is hosted by Cloudflare, which processes technical data such as your IP address to deliver the pages and protect them from abuse.
 
-## Changes to this policy
+## 6. Retention and deletion
 
-If the App starts handling data differently, we will update this page and the date above.
+Data in the App stays on your device until you delete it. To delete it, use **Settings → Delete All History** in the App, or delete the App. Copies in your device backups are managed by you and Apple.
 
-## Contact us
+## 7. Your rights
 
-Questions about privacy: support@bnsoftware.org.
+If the GDPR or similar laws apply to you, you have the right to access, correct and erase your personal data, to restrict or object to its processing and to data portability, within the limits set by law. For data in the App you can exercise these rights directly on your device, because we never receive it. For correspondence with us, write to support@bnsoftware.org.
+
+You also have the right to lodge a complaint with a data protection supervisory authority, in particular in the EU country where you live or work. In Slovakia this is the Office for Personal Data Protection of the Slovak Republic ([dataprotection.gov.sk](https://dataprotection.gov.sk)).
+
+## 8. Children
+
+The App is not directed at children under 13, or under the minimum age set by the law of your country. We do not knowingly collect personal data from children.
+
+## 9. Security
+
+Your data is protected by the security features of iOS, such as data protection while your device is locked with a passcode. Keep your device secure and up to date.
+
+## 10. Changes to this policy
+
+If the way the App handles data changes, we will update this page and the date above before the change takes effect.
+
+## 11. Contact
+
+B&N Software — support@bnsoftware.org
