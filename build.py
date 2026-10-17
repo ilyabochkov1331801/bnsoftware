@@ -215,14 +215,11 @@ def store_html(app):
     """Ссылка на App Store или пометка «скоро», если store_url не задан."""
     if app["store_url"]:
         return f'<a class="pill store" href="{esc(app["store_url"])}">App Store</a>'
-    return '<span class="soon">Coming soon to the App Store · Скоро в App Store</span>'
+    return '<span class="soon">Coming soon to the App Store</span>'
 
 
 def descriptions(app, cls=""):
-    out = f'<p class="{cls}">{esc(app["description"])}</p>' if app["description"] else ""
-    if app["description_ru"]:
-        out += f'<p class="{cls} ru" lang="ru">{esc(app["description_ru"])}</p>'
-    return out
+    return f'<p class="{cls}">{esc(app["description"])}</p>' if app["description"] else ""
 
 
 def read_doc(path):
@@ -268,7 +265,6 @@ def load_apps():
             "dir": folder,
             "name": meta.get("name") or folder.name.replace("-", " ").title(),
             "description": meta.get("description", ""),
-            "description_ru": meta.get("description_ru", ""),
             "store_url": meta.get("store_url", ""),
             "icon": next((i for i in ICONS if (folder / i).exists()), None),
             "docs": docs,
@@ -305,11 +301,11 @@ def build():
   </div>
 </article>""" for a in apps)
         listing = f'''<section id="apps">
-<h2 class="section-title">Our apps <span lang="ru">· Наши приложения</span></h2>
+<h2 class="section-title">Our apps</h2>
 <div class="apps">{cards}</div>
 </section>'''
     else:
-        listing = '<p class="empty">Пока нет ни одного приложения — добавьте папку в apps/.</p>'
+        listing = '<p class="empty">No apps yet.</p>'
     write(OUT / "index.html", page(
         site, depth=0, title=company,
         description=f"Apps by {company}: privacy policies and terms of use.",
