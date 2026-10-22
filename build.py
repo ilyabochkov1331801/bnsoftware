@@ -179,6 +179,7 @@ def page(site, *, title, body, depth, description=""):
     company = esc(site["company"])
     email = site.get("email", "").strip()
     contact = f'<a href="mailto:{esc(email)}">{esc(email)}</a>' if email else ""
+    owner = esc(site.get("legal") or site["company"])
     meta = f'<meta name="description" content="{esc(description)}">' if description else ""
     return f"""<!doctype html>
 <html lang="{esc(site.get('lang', 'en'))}">
@@ -194,7 +195,7 @@ def page(site, *, title, body, depth, description=""):
 <main><div class="wrap">
 {body}
 </div></main>
-<footer class="site"><div class="wrap"><span>© {date.today().year} {company}</span>{contact}</div></footer>
+<footer class="site"><div class="wrap"><span>© {date.today().year} {owner}</span>{contact}</div></footer>
 </body>
 </html>
 """

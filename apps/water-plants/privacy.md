@@ -1,8 +1,8 @@
 # Privacy Policy
 
-_Last updated: October 17, 2026_
+_Last updated: October 22, 2026_
 
-This Privacy Policy explains how **Sprout** (the "App") handles information. The App is published by **B&N Software** ("we", "us", "our"). You can reach us at support@bnsoftware.org.
+This Privacy Policy explains how **Sprout** (the "App") handles information. The App is published by **B&N Software s. r. o.** ("we", "us", "our"). You can reach us at support@bnsoftware.org.
 
 **In short: the App works entirely on your iPhone. We do not collect, receive or store any personal data from the App, and the App sends nothing to us or to anyone else.**
 
@@ -67,4 +67,7 @@ If the way the App handles data changes, we will update this page and the date a
 
 ## 11. Contact
 
-B&N Software — support@bnsoftware.org
+B&N Software s. r. o.  
+Hornočermánska 1556/76, 949 01 Nitra, Slovakia  
+Company ID (IČO): 57302031  
+support@bnsoftware.org

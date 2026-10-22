@@ -1,8 +1,8 @@
 # Terms of Use
 
-_Last updated: October 17, 2026_
+_Last updated: October 22, 2026_
 
-These Terms of Use ("Terms") apply to **Daystamp** (the "App"), published by **B&N Software** ("we", "us", "our"), support@bnsoftware.org. By downloading or using the App you agree to these Terms.
+These Terms of Use ("Terms") apply to **Daystamp** (the "App"), published by **B&N Software s. r. o.** ("we", "us", "our"), support@bnsoftware.org. By downloading or using the App you agree to these Terms.
 
 The App is licensed to you, not sold, under Apple's [Licensed Application End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) (the "Apple EULA"). These Terms add to the Apple EULA; if they conflict, the Apple EULA prevails.
 
@@ -35,7 +35,7 @@ The data you enter stays on your device and remains yours. Keep exported files s
 
 ## 6. Intellectual property
 
-The App, its design, texts and graphics are owned by B&N Software or its licensors and protected by law. Country borders are derived from [Natural Earth](https://www.naturalearthdata.com) (public domain). These Terms do not give you any rights to them other than the right to use the App as described here and in the Apple EULA.
+The App, its design, texts and graphics are owned by B&N Software s. r. o. or its licensors and protected by law. Country borders are derived from [Natural Earth](https://www.naturalearthdata.com) (public domain). These Terms do not give you any rights to them other than the right to use the App as described here and in the Apple EULA.
 
 ## 7. Updates and availability
 
@@ -73,4 +73,7 @@ If any part of these Terms is found invalid, the rest remains in effect.
 
 ## 12. Contact
 
-B&N Software — support@bnsoftware.org
+B&N Software s. r. o.  
+Hornočermánska 1556/76, 949 01 Nitra, Slovakia  
+Company ID (IČO): 57302031  
+support@bnsoftware.org
