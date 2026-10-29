@@ -11,6 +11,7 @@ import shutil
 import sys
 from datetime import date
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent
 APPS_DIR = ROOT / "apps"
@@ -193,7 +194,7 @@ def page(site, *, title, body, depth, description="", up=None):
 <link rel="stylesheet" href="{up}style.css">
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="brand" href="{home}">{company}</a><nav class="nav"><a href="{home}#apps">Apps</a><a href="{home}#about">About</a><a href="{home}#contact">Contact</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="brand" href="{home}">{company}</a><nav class="nav"><a href="{home}#apps">Apps</a><a href="{home}#about">About</a><a href="{home}#work">Work with us</a><a href="{home}#contact">Contact</a></nav></div></header>
 <main><div class="wrap">
 {body}
 </div></main>
@@ -231,27 +232,55 @@ def features(app, limit=None):
     return f'<ul class="features">{lis}</ul>' if lis else ""
 
 
+def mailto(email, subject=""):
+    href = f"mailto:{email}" + (f"?subject={quote(subject)}" if subject else "")
+    return esc(href)
+
+
 def company_html(site):
-    """Блок «About» с реквизитами компании и блок «Contact» для главной."""
+    """Разделы главной под списком приложений: About (команда), Work with us, Contact (с реквизитами)."""
+    email = site.get("email", "").strip()
     paras = "".join(f"<p>{esc(t)}</p>" for t in site.get("about", []))
+    people = "".join(f"""
+<article class="person">
+  <h3>{esc(m["name"])}</h3>
+  <p class="role">{esc(m["role"])}</p>
+  <p>{esc(m["bio"])}</p>
+  <ul class="features">{"".join(f"<li>{esc(h)}</li>" for h in m.get("highlights", []))}</ul>
+</article>""" for m in site.get("team", []))
+
+    services = "".join(f"""
+<article class="service">
+  <h3>{esc(sv["title"])}</h3>
+  <p>{esc(sv["text"])}</p>
+  <ul class="features">{"".join(f"<li>{esc(i)}</li>" for i in sv.get("items", []))}</ul>
+  <a class="pill cta" href="{mailto(email, sv.get("subject", ""))}">{esc(sv["button"])}</a>
+</article>""" for sv in site.get("services", []))
+    work = f"""<section id="work" class="block">
+<h2 class="section-title">Work with us</h2>
+{f'<p>{esc(site["services_intro"])}</p>' if site.get("services_intro") else ""}
+<div class="services">{services}</div>
+</section>""" if services else ""
+
     rows = [("Legal name", esc(site.get("legal_name") or site["company"])),
             ("Registered address", "<br>".join(esc(line) for line in site.get("address", [])))]
     rows += [(esc(label), esc(value)) for label, value in site.get("ids", [])]
-    email = site.get("email", "").strip()
     if email:
-        rows.append(("Email", f'<a href="mailto:{esc(email)}">{esc(email)}</a>'))
+        rows.append(("Email", f'<a href="{mailto(email)}">{esc(email)}</a>'))
     details = "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in rows)
-    contact = (f'<p>For support, feedback or business enquiries about any of our apps, '
-               f'email us at <a href="mailto:{esc(email)}">{esc(email)}</a>. '
-               f'Please mention the app you are writing about.</p>') if email else ""
+    contact = (f'<p>For support or feedback about our apps, a project or lessons, email us at '
+               f'<a href="{mailto(email)}">{esc(email)}</a>. We read every message.</p>') if email else ""
     return f"""<section id="about" class="block">
-<h2 class="section-title">About {esc(site["company"])}</h2>
+<h2 class="section-title">About us</h2>
 {paras}
-<dl class="company">{details}</dl>
+{f'<div class="team">{people}</div>' if people else ""}
 </section>
+{work}
 <section id="contact" class="block">
 <h2 class="section-title">Contact</h2>
 {contact}
+<h3 class="sub-title">Company details</h3>
+<dl class="company">{details}</dl>
 </section>"""
 
 

@@ -1,18 +1,71 @@
 {
   "company": "B&N Software",
   "legal_name": "B&N Software s. r. o.",
-  "address": ["Hornočermánska 1556/76", "949 01 Nitra", "Slovakia"],
+  "address": [
+    "Hornočermánska 1556/76",
+    "949 01 Nitra",
+    "Slovakia"
+  ],
   "ids": [
-    ["Company ID (IČO)", "57302031"],
-    ["Tax ID (DIČ)", "2122663972"],
-    ["VAT ID (IČ DPH)", "SK2122663972"]
+    [
+      "Company ID (IČO)",
+      "57302031"
+    ],
+    [
+      "Tax ID (DIČ)",
+      "2122663972"
+    ],
+    [
+      "VAT ID (IČ DPH)",
+      "SK2122663972"
+    ]
   ],
   "email": "support@bnsoftware.org",
   "lang": "en",
   "headline": "Small, private apps for iPhone",
-  "intro": "B&N Software is an independent app studio in Nitra, Slovakia. Our apps each do one thing well, work offline and keep your data on your iPhone.",
+  "intro": "B&N Software is a small family studio from Slovakia. We design and build our own iPhone apps, and we help other people build and learn to build theirs.",
   "about": [
-    "B&N Software s. r. o. is a software company registered in Slovakia. We design, build and publish our own apps for iPhone and support them ourselves.",
+    "B&N Software s. r. o. is a family business: Ilya and his wife make apps together, from the first idea and design to code, App Store release and support. The company is registered in Slovakia.",
     "Everything we make follows the same rules: no accounts, no ads, no analytics and no tracking. Your data stays on your device, and the core features of every app are free. Optional Pro features are sold through the App Store."
-  ]
+  ],
+  "team": [
+    {
+      "name": "Ilya Bachkou",
+      "role": "Senior iOS Engineer",
+      "bio": "Ilya has been building iOS apps for more than six years, in Swift and Objective-C, from small product apps made from scratch to banking apps used by companies every day. He cares about software that feels effortless to use.",
+      "highlights": [
+        "Product apps built from scratch, plus shared frameworks for analytics, in-app purchases, UI components and data storage",
+        "Client projects: a banking app for businesses (document signing, moving Objective-C code to Swift, a design system), a public transport fare payment app that talks to Bluetooth beacons, a precious metals purchase flow with an Apple Watch companion app, and an SDK for showing and tracking banners in apps",
+        "Swift, SwiftUI, UIKit, async/await, StoreKit, WidgetKit, HealthKit, CoreLocation, Bluetooth, watchOS, unit and snapshot tests, CI/CD",
+        "Degree in information security from the Belarusian State University"
+      ]
+    }
+  ],
+  "services": [
+    {
+      "title": "Apps for your business",
+      "text": "We can build an iPhone app for you from scratch or join your team to work on an existing one.",
+      "items": [
+        "New apps in Swift and SwiftUI, from the first screen to App Store release",
+        "New features, widgets, in-app purchases and subscriptions",
+        "Moving Objective-C code to Swift and modernising older projects",
+        "Code review, architecture and help with App Store review"
+      ],
+      "button": "Discuss a project",
+      "subject": "Project enquiry"
+    },
+    {
+      "title": "Learn iOS development",
+      "text": "Ilya teaches iOS development one to one, for beginners writing their first app and for developers who want to grow.",
+      "items": [
+        "Swift and SwiftUI from the very beginning",
+        "Lessons built around your own app or project",
+        "Code review and architecture sessions",
+        "Preparation for iOS developer interviews"
+      ],
+      "button": "Ask about lessons",
+      "subject": "iOS lessons"
+    }
+  ],
+  "services_intro": "Besides our own apps, we take on client work and teach. Lessons and calls are in English or Russian."
 }
