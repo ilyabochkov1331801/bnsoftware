@@ -173,13 +173,15 @@ def markdown(src):
 
 # ---------------------------------------------------------------- pages
 
-def page(site, *, title, body, depth, description=""):
-    up = "../" * depth
+def page(site, *, title, body, depth, description="", up=None):
+    up = "../" * depth if up is None else up
     home = up or "./"
     company = esc(site["company"])
     email = site.get("email", "").strip()
     contact = f'<a href="mailto:{esc(email)}">{esc(email)}</a>' if email else ""
-    owner = esc(site.get("legal") or site["company"])
+    owner = ", ".join([site.get("legal_name") or site["company"], *site.get("address", [])])
+    if site.get("ids"):
+        owner += f' · {site["ids"][0][0]} {site["ids"][0][1]}'
     meta = f'<meta name="description" content="{esc(description)}">' if description else ""
     return f"""<!doctype html>
 <html lang="{esc(site.get('lang', 'en'))}">
@@ -191,11 +193,11 @@ def page(site, *, title, body, depth, description=""):
 <link rel="stylesheet" href="{up}style.css">
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="brand" href="{home}">{company}</a><nav class="nav"><a href="{home}#apps">Our apps</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="brand" href="{home}">{company}</a><nav class="nav"><a href="{home}#apps">Apps</a><a href="{home}#about">About</a><a href="{home}#contact">Contact</a></nav></div></header>
 <main><div class="wrap">
 {body}
 </div></main>
-<footer class="site"><div class="wrap"><span>© {date.today().year} {owner}</span>{contact}</div></footer>
+<footer class="site"><div class="wrap"><span>© {date.today().year} {esc(owner)}</span>{contact}</div></footer>
 </body>
 </html>
 """
@@ -221,6 +223,36 @@ def store_html(app):
 
 def descriptions(app, cls=""):
     return f'<p class="{cls}">{esc(app["description"])}</p>' if app["description"] else ""
+
+
+def features(app, limit=None):
+    items = app["features"][:limit] if limit else app["features"]
+    lis = "".join(f"<li>{esc(f)}</li>" for f in items)
+    return f'<ul class="features">{lis}</ul>' if lis else ""
+
+
+def company_html(site):
+    """Блок «About» с реквизитами компании и блок «Contact» для главной."""
+    paras = "".join(f"<p>{esc(t)}</p>" for t in site.get("about", []))
+    rows = [("Legal name", esc(site.get("legal_name") or site["company"])),
+            ("Registered address", "<br>".join(esc(line) for line in site.get("address", [])))]
+    rows += [(esc(label), esc(value)) for label, value in site.get("ids", [])]
+    email = site.get("email", "").strip()
+    if email:
+        rows.append(("Email", f'<a href="mailto:{esc(email)}">{esc(email)}</a>'))
+    details = "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in rows)
+    contact = (f'<p>For support, feedback or business enquiries about any of our apps, '
+               f'email us at <a href="mailto:{esc(email)}">{esc(email)}</a>. '
+               f'Please mention the app you are writing about.</p>') if email else ""
+    return f"""<section id="about" class="block">
+<h2 class="section-title">About {esc(site["company"])}</h2>
+{paras}
+<dl class="company">{details}</dl>
+</section>
+<section id="contact" class="block">
+<h2 class="section-title">Contact</h2>
+{contact}
+</section>"""
 
 
 def read_doc(path):
@@ -266,6 +298,10 @@ def load_apps():
             "dir": folder,
             "name": meta.get("name") or folder.name.replace("-", " ").title(),
             "description": meta.get("description", ""),
+            "tagline": meta.get("tagline", ""),
+            "about": meta.get("about", ""),
+            "features": meta.get("features", []),
+            "price": meta.get("price", ""),
             "store_url": meta.get("store_url", ""),
             "icon": next((i for i in ICONS if (folder / i).exists()), None),
             "docs": docs,
@@ -298,10 +334,15 @@ def build():
   <div class="app-body">
     <h2><a href="{a['slug']}/">{esc(a['name'])}</a></h2>
     {descriptions(a)}
+    {features(a, 3)}
     <div class="links">{doc_links(a, a['slug'] + '/')}{store_html(a)}</div>
   </div>
 </article>""" for a in apps)
-        listing = f'''<section id="apps">
+        listing = f'''<section class="hero">
+<h1>{esc(site.get("headline") or company)}</h1>
+{f'<p class="lead">{esc(site["intro"])}</p>' if site.get("intro") else ""}
+</section>
+<section id="apps">
 <h2 class="section-title">Our apps</h2>
 <div class="apps">{cards}</div>
 </section>'''
@@ -309,8 +350,15 @@ def build():
         listing = '<p class="empty">No apps yet.</p>'
     write(OUT / "index.html", page(
         site, depth=0, title=company,
-        description=f"Apps by {company}: privacy policies and terms of use.",
-        body=listing))
+        description=site.get("intro") or f"Apps by {company}.",
+        body=listing + company_html(site)))
+
+    email = site.get("email", "").strip()
+    # 404 открывается по любому адресу, поэтому ссылки в нём от корня сайта
+    write(OUT / "404.html", page(
+        site, depth=0, up="/", title=f"Page not found — {company}",
+        body='<h1>Page not found</h1><p class="lead">This page does not exist. '
+             '<a href="/">Go to the home page</a> to see our apps.</p>'))
 
     for app in apps:
         slug, name = app["slug"], app["name"]
@@ -325,9 +373,16 @@ def build():
             body=f"""<nav class="crumbs"><a href="../">{esc(company)}</a></nav>
 <div class="app-head">{icon_html(app, '')}<div>
 <h1>{esc(name)}</h1>
+{f'<p class="eyebrow">{esc(app["tagline"])}</p>' if app["tagline"] else ""}
 {descriptions(app, "lead")}
 </div></div>
-<div class="links big">{doc_links(app, '')}{store_html(app)}</div>"""))
+<div class="links big">{doc_links(app, '')}{store_html(app)}</div>
+{f'<p class="app-about">{esc(app["about"])}</p>' if app["about"] else ""}
+{f'<h2 class="section-title">Features</h2>{features(app)}' if app["features"] else ""}
+{f'<h2 class="section-title">Price</h2><p>{esc(app["price"])}</p>' if app["price"] else ""}
+<h2 class="section-title">Support</h2>
+<p>Questions or feedback about {esc(name)}? Email us at <a href="mailto:{esc(email)}">{esc(email)}</a>.
+{esc(name)} is developed and published by {esc(site.get("legal_name") or company)}, {esc(", ".join(site.get("address", [])))}.</p>"""))
 
         # Документы
         for key, path in app["docs"].items():

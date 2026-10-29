@@ -1,5 +1,16 @@
 {
   "name": "Sprout",
+  "tagline": "A cute plant-watering reminder",
   "description": "A cute plant-watering reminder: your plants droop when they get thirsty and perk up after a drink, with daily reminders and a widget to water them in one tap — privately, offline, right on your iPhone.",
+  "about": "Add your house plants once and Sprout keeps track of when each one needs water. Every plant has its own schedule, and you can see at a glance who is thirsty.",
+  "features": [
+    "Each plant gets its own watering schedule, with care tips for popular houseplants",
+    "Plants droop when they get thirsty and perk up after a drink",
+    "A daily reminder when plants need water",
+    "Water a plant in one tap from the Home Screen widget",
+    "Watering history for every plant",
+    "Pro: unlimited plants, fertilizer reminders on each plant's own schedule, a photo diary to see your plants grow and more pot colours"
+  ],
+  "price": "Free, with optional Pro as a monthly subscription or a one-time lifetime purchase.",
   "store_url": ""
 }

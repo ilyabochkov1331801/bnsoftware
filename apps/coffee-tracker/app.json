@@ -1,5 +1,17 @@
 {
   "name": "Cuppa",
+  "tagline": "A cute caffeine tracker",
   "description": "A cute caffeine tracker: watch your cup fill up through the day, log drinks right from the widget and stay under your daily limit — privately, offline, right on your iPhone.",
+  "about": "Cuppa turns your daily coffee, tea and other caffeinated drinks into a cup that fills up as the day goes on, so you can see at a glance how close you are to your limit.",
+  "features": [
+    "Log coffee, tea, energy drinks and more from a list of common drinks with typical caffeine values",
+    "Set a daily caffeine limit (400 mg by default) and see how much of it you've used",
+    "Log a drink in one tap from the Home Screen widget, without opening the app",
+    "Create your own drinks and recipes",
+    "History of every day and the days you went over the limit",
+    "Pro: advanced stats with monthly and quarterly trends, favourite drinks, time of day, calories and an estimate of the caffeine in your body",
+    "Pro: cup styles and themes"
+  ],
+  "price": "Free, with optional Pro as a monthly subscription or a one-time lifetime purchase.",
   "store_url": ""
 }

@@ -1,5 +1,18 @@
 {
   "name": "Daystamp",
+  "tagline": "Tax residency & Schengen days",
   "description": "Counts the days you spend in each country — privately, offline, right on your iPhone.",
+  "about": "Digital nomads, expats and frequent travellers need to know how many days they've spent where: for tax residency (the 183-day rule), visas and the Schengen 90/180 rule. Daystamp keeps that count in the background, so you don't have to dig through tickets and passport stamps.",
+  "features": [
+    "Counts the days in each country automatically, even with the app closed",
+    "Shows progress to your residency threshold (183 days by default) and warns you as you get close",
+    "World map of the countries you've visited and a year calendar coloured by country",
+    "Correct any day or add past trips by hand",
+    "Home Screen and Lock Screen widgets with your current country and days",
+    "Back up your history to Files or iCloud Drive and restore it on a new phone",
+    "The country is worked out on your iPhone from built-in borders; coordinates are never stored",
+    "Pro: Schengen 90/180 calculator and trip planner, past years, threshold alerts and CSV export"
+  ],
+  "price": "Free, with optional Pro as a monthly subscription or a one-time lifetime purchase.",
   "store_url": ""
 }

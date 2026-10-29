@@ -1,6 +1,18 @@
 {
   "company": "B&N Software",
+  "legal_name": "B&N Software s. r. o.",
+  "address": ["Hornočermánska 1556/76", "949 01 Nitra", "Slovakia"],
+  "ids": [
+    ["Company ID (IČO)", "57302031"],
+    ["Tax ID (DIČ)", "2122663972"],
+    ["VAT ID (IČ DPH)", "SK2122663972"]
+  ],
   "email": "support@bnsoftware.org",
   "lang": "en",
-  "legal": "B&N Software s. r. o., Hornočermánska 1556/76, 949 01 Nitra, Slovakia, IČO 57302031"
+  "headline": "Small, private apps for iPhone",
+  "intro": "B&N Software is an independent app studio in Nitra, Slovakia. Our apps each do one thing well, work offline and keep your data on your iPhone.",
+  "about": [
+    "B&N Software s. r. o. is a software company registered in Slovakia. We design, build and publish our own apps for iPhone and support them ourselves.",
+    "Everything we make follows the same rules: no accounts, no ads, no analytics and no tracking. Your data stays on your device, and the core features of every app are free. Optional Pro features are sold through the App Store."
+  ]
 }

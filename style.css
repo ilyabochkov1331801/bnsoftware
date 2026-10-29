@@ -42,6 +42,7 @@ a { color: var(--accent); }
 header.site { border-bottom: 1px solid var(--border); }
 header.site .wrap { display: flex; align-items: center; height: 60px; }
 .nav { margin-left: auto; font-size: 15px; }
+.nav { display: flex; gap: 18px; }
 .nav a { color: var(--muted); text-decoration: none; }
 .nav a:hover { color: var(--text); }
 .brand { font-weight: 700; font-size: 18px; letter-spacing: -0.02em; color: var(--text); text-decoration: none; }
@@ -59,6 +60,30 @@ h1 {
 .eyebrow { margin: 0 0 8px; color: var(--muted); font-size: 14px; font-weight: 500; }
 .lead { margin: 0 0 36px; color: var(--muted); font-size: 18px; }
 .empty { color: var(--muted); }
+
+/* Главная */
+.hero { margin-bottom: 40px; }
+.hero .lead { margin-bottom: 0; max-width: 620px; }
+.block { margin-top: 56px; }
+.block p { margin: 0 0 14px; }
+
+.company {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px 24px;
+  margin: 20px 0 0;
+  padding: 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  font-size: 15px;
+}
+.company dt { color: var(--muted); }
+.company dd { margin: 0; }
+
+.features { margin: 8px 0 0; padding-left: 20px; }
+.features li { margin: 3px 0; }
+.app .features { color: var(--muted); font-size: 14px; }
 
 /* Список приложений */
 .section-title { font-size: 22px; letter-spacing: -0.01em; margin: 8px 0 16px; }
@@ -113,6 +138,10 @@ h1 {
 .app-head { display: flex; gap: 18px; align-items: flex-start; margin-bottom: 8px; }
 .app-head .icon { width: 64px; height: 64px; font-size: 28px; margin-top: 4px; }
 .app-head .lead { margin-bottom: 28px; }
+.app-head .eyebrow { margin: -4px 0 8px; }
+.app-about { margin: 32px 0 0; }
+main .section-title { margin-top: 36px; }
+#apps .section-title { margin-top: 8px; }
 
 /* Документ */
 .crumbs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; color: var(--muted); font-size: 14px; }
@@ -150,6 +179,9 @@ footer.site a { color: inherit; }
   main { padding-top: 32px; }
   .app { padding: 14px; gap: 12px; }
   .icon { width: 44px; height: 44px; font-size: 19px; }
+  .company { grid-template-columns: 1fr; gap: 2px; }
+  .company dd { margin-bottom: 10px; }
+  .nav { gap: 14px; }
 }
 
 @media print {
