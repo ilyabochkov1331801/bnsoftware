@@ -174,7 +174,7 @@ def markdown(src):
 
 # ---------------------------------------------------------------- pages
 
-def page(site, *, title, body, depth, description="", up=None):
+def page(site, *, title, body, depth, description="", up=None, wide=False):
     up = "../" * depth if up is None else up
     home = up or "./"
     company = esc(site["company"])
@@ -193,7 +193,7 @@ def page(site, *, title, body, depth, description="", up=None):
 {meta}
 <link rel="stylesheet" href="{up}style.css">
 </head>
-<body>
+<body{' class="wide"' if wide else ""}>
 <header class="site"><div class="wrap"><a class="brand" href="{home}">{company}</a><nav class="nav"><a href="{home}#apps">Apps</a><a href="{home}#about">About</a><a href="{home}#work">Work with us</a><a href="{home}#contact">Contact</a></nav></div></header>
 <main><div class="wrap">
 {body}
@@ -378,7 +378,7 @@ def build():
     else:
         listing = '<p class="empty">No apps yet.</p>'
     write(OUT / "index.html", page(
-        site, depth=0, title=company,
+        site, depth=0, title=company, wide=True,
         description=site.get("intro") or f"Apps by {company}.",
         body=listing + company_html(site)))
 
