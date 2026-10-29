@@ -34,7 +34,8 @@
         "Client projects: a banking app for businesses (document signing, moving Objective-C code to Swift, a design system), a public transport fare payment app that talks to Bluetooth beacons, a precious metals purchase flow with an Apple Watch companion app, and an SDK for showing and tracking banners in apps",
         "Swift, SwiftUI, UIKit, async/await, StoreKit, WidgetKit, HealthKit, CoreLocation, Bluetooth, watchOS, unit and snapshot tests, CI/CD",
         "Degree in information security from the Belarusian State University"
-      ]
+      ],
+      "photo": "assets/ilya.jpg"
     }
   ],
   "services": [

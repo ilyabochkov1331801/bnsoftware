@@ -243,10 +243,13 @@ def company_html(site):
     paras = "".join(f"<p>{esc(t)}</p>" for t in site.get("about", []))
     people = "".join(f"""
 <article class="person">
+  {f'<img class="photo" src="{esc(m["photo"])}" alt="{esc(m["name"])}" width="112" height="112">' if m.get("photo") else ""}
+  <div>
   <h3>{esc(m["name"])}</h3>
   <p class="role">{esc(m["role"])}</p>
   <p>{esc(m["bio"])}</p>
   <ul class="features">{"".join(f"<li>{esc(h)}</li>" for h in m.get("highlights", []))}</ul>
+  </div>
 </article>""" for m in site.get("team", []))
 
     services = "".join(f"""
@@ -346,6 +349,8 @@ def build():
     shutil.rmtree(OUT, ignore_errors=True)
     OUT.mkdir()
     shutil.copy(ROOT / "style.css", OUT / "style.css")
+    if (ROOT / "assets").is_dir():  # фото и прочие файлы для главной
+        shutil.copytree(ROOT / "assets", OUT / "assets")
     (OUT / ".nojekyll").touch()
     if (ROOT / "_redirects").exists():  # Cloudflare Pages redirects
         shutil.copy(ROOT / "_redirects", OUT / "_redirects")

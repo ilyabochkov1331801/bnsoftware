@@ -80,6 +80,8 @@ h1 {
   border: 1px solid var(--border);
   border-radius: 16px;
 }
+.person { flex-direction: row; gap: 18px; align-items: flex-start; }
+.person .photo { width: 112px; height: 112px; flex: none; border-radius: 50%; object-fit: cover; }
 .person h3, .service h3 { margin: 0; font-size: 17px; line-height: 1.3; }
 .person p, .service p { margin: 6px 0 0; font-size: 15px; }
 .person .role { margin-top: 2px; color: var(--muted); }
@@ -188,6 +190,8 @@ footer.site a { color: inherit; }
   .icon { width: 44px; height: 44px; font-size: 19px; }
   .nav { gap: 12px; font-size: 14px; }
   .nav a:first-child { display: none; }
+  .person { flex-direction: column; }
+  .person .photo { width: 96px; height: 96px; }
   .brand { font-size: 16px; }
 }
 
