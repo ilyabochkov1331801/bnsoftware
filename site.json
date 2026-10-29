@@ -36,7 +36,8 @@
         "Degree in information security from the Belarusian State University"
       ],
       "photo": "assets/ilya.jpg",
-      "color": "#e0794a"
+      "color": "#e0794a",
+      "cv": "assets/ilya-bachkou-cv.pdf"
     }
   ],
   "services": [

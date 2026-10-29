@@ -254,6 +254,7 @@ def company_html(site):
   <p class="role">{esc(m["role"])}</p>
   <p>{esc(m["bio"])}</p>
   <ul class="features">{"".join(f"<li>{esc(h)}</li>" for h in m.get("highlights", []))}</ul>
+  {f'<a class="pill cta" href="{esc(m["cv"])}" download>Download CV (PDF)</a>' if m.get("cv") else ""}
   </div>
 </article>""" for m in site.get("team", []))
 
