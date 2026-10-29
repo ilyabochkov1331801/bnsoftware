@@ -262,12 +262,8 @@ def company_html(site):
 <div class="services">{services}</div>
 </section>""" if services else ""
 
-    rows = [("Legal name", esc(site.get("legal_name") or site["company"])),
-            ("Registered address", "<br>".join(esc(line) for line in site.get("address", [])))]
-    rows += [(esc(label), esc(value)) for label, value in site.get("ids", [])]
-    if email:
-        rows.append(("Email", f'<a href="{mailto(email)}">{esc(email)}</a>'))
-    details = "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in rows)
+    legal = ", ".join([site.get("legal_name") or site["company"], *site.get("address", [])])
+    ids = " · ".join(f"{label} {value}" for label, value in site.get("ids", []))
     contact = (f'<p>For support or feedback about our apps, a project or lessons, email us at '
                f'<a href="{mailto(email)}">{esc(email)}</a>. We read every message.</p>') if email else ""
     return f"""<section id="about" class="block">
@@ -279,8 +275,7 @@ def company_html(site):
 <section id="contact" class="block">
 <h2 class="section-title">Contact</h2>
 {contact}
-<h3 class="sub-title">Company details</h3>
-<dl class="company">{details}</dl>
+<p class="legal">{esc(legal)}<br>{esc(ids)}</p>
 </section>"""
 
 

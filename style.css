@@ -68,19 +68,7 @@ h1 {
 .block { margin-top: 56px; }
 .block p { margin: 0 0 14px; }
 
-.company {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: 8px 24px;
-  margin: 20px 0 0;
-  padding: 18px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  font-size: 15px;
-}
-.company dt { color: var(--muted); }
-.company dd { margin: 0; }
+.legal { color: var(--muted); font-size: 14px; }
 
 .team, .services { display: grid; gap: 12px; margin-top: 20px; }
 .services { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
@@ -99,7 +87,6 @@ h1 {
 .service .features { margin-bottom: 16px; }
 .pill.cta { align-self: flex-start; margin-top: auto; padding: 8px 16px; background: var(--accent); color: var(--surface); }
 .pill.cta:hover { opacity: 0.9; }
-.sub-title { margin: 24px 0 0; font-size: 16px; }
 
 .features { margin: 8px 0 0; padding-left: 20px; }
 .features li { margin: 3px 0; }
@@ -199,8 +186,6 @@ footer.site a { color: inherit; }
   main { padding-top: 32px; }
   .app { padding: 14px; gap: 12px; }
   .icon { width: 44px; height: 44px; font-size: 19px; }
-  .company { grid-template-columns: 1fr; gap: 2px; }
-  .company dd { margin-bottom: 10px; }
   .nav { gap: 12px; font-size: 14px; }
   .nav a:first-child { display: none; }
   .brand { font-size: 16px; }
