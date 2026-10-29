@@ -1,6 +1,7 @@
 {
   "name": "Cuppa",
   "tagline": "A cute caffeine tracker",
+  "color": "#c0803f",
   "description": "A cute caffeine tracker: watch your cup fill up through the day, log drinks right from the widget and stay under your daily limit — privately, offline, right on your iPhone.",
   "about": "Cuppa turns your daily coffee, tea and other caffeinated drinks into a cup that fills up as the day goes on, so you can see at a glance how close you are to your limit.",
   "features": [

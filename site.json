@@ -35,7 +35,8 @@
         "Swift, SwiftUI, UIKit, async/await, StoreKit, WidgetKit, HealthKit, CoreLocation, Bluetooth, watchOS, unit and snapshot tests, CI/CD",
         "Degree in information security from the Belarusian State University"
       ],
-      "photo": "assets/ilya.jpg"
+      "photo": "assets/ilya.jpg",
+      "color": "#e0794a"
     }
   ],
   "services": [
@@ -49,7 +50,8 @@
         "Code review, architecture and help with App Store review"
       ],
       "button": "Discuss a project",
-      "subject": "Project enquiry"
+      "subject": "Project enquiry",
+      "color": "#3b74e0"
     },
     {
       "title": "Learn iOS development",
@@ -61,7 +63,8 @@
         "Preparation for iOS developer interviews"
       ],
       "button": "Ask about lessons",
-      "subject": "iOS lessons"
+      "subject": "iOS lessons",
+      "color": "#8a5cf6"
     }
   ],
   "services_intro": "Besides our own apps, we take on client work and teach. Lessons and calls are in English or Russian."

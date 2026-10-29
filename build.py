@@ -232,6 +232,11 @@ def features(app, limit=None):
     return f'<ul class="features">{lis}</ul>' if lis else ""
 
 
+def tint(color):
+    """Атрибуты карточки, окрашенной в цвет приложения или услуги."""
+    return f' style="--tint: {esc(color)}"' if color else ""
+
+
 def mailto(email, subject=""):
     href = f"mailto:{email}" + (f"?subject={quote(subject)}" if subject else "")
     return esc(href)
@@ -242,7 +247,7 @@ def company_html(site):
     email = site.get("email", "").strip()
     paras = "".join(f"<p>{esc(t)}</p>" for t in site.get("about", []))
     people = "".join(f"""
-<article class="person">
+<article class="person tinted"{tint(m.get("color"))}>
   {f'<img class="photo" src="{esc(m["photo"])}" alt="{esc(m["name"])}" width="112" height="112">' if m.get("photo") else ""}
   <div>
   <h3>{esc(m["name"])}</h3>
@@ -253,7 +258,7 @@ def company_html(site):
 </article>""" for m in site.get("team", []))
 
     services = "".join(f"""
-<article class="service">
+<article class="service tinted"{tint(sv.get("color"))}>
   <h3>{esc(sv["title"])}</h3>
   <p>{esc(sv["text"])}</p>
   <ul class="features">{"".join(f"<li>{esc(i)}</li>" for i in sv.get("items", []))}</ul>
@@ -326,6 +331,7 @@ def load_apps():
             "name": meta.get("name") or folder.name.replace("-", " ").title(),
             "description": meta.get("description", ""),
             "tagline": meta.get("tagline", ""),
+            "color": meta.get("color", ""),
             "about": meta.get("about", ""),
             "features": meta.get("features", []),
             "price": meta.get("price", ""),
@@ -358,7 +364,7 @@ def build():
     # Главная: список приложений
     if apps:
         cards = "".join(f"""
-<article class="app">
+<article class="app tinted"{tint(a["color"])}>
   <a href="{a['slug']}/">{icon_html(a, a['slug'] + '/')}</a>
   <div class="app-body">
     <h2><a href="{a['slug']}/">{esc(a['name'])}</a></h2>
@@ -400,14 +406,16 @@ def build():
         write(out_dir / "index.html", page(
             site, depth=1, title=f"{name} — {company}", description=app["description"],
             body=f"""<nav class="crumbs"><a href="../">{esc(company)}</a></nav>
+<div class="app-hero tinted"{tint(app["color"])}>
 <div class="app-head">{icon_html(app, '')}<div>
 <h1>{esc(name)}</h1>
 {f'<p class="eyebrow">{esc(app["tagline"])}</p>' if app["tagline"] else ""}
 {descriptions(app, "lead")}
 </div></div>
 <div class="links big">{doc_links(app, '')}{store_html(app)}</div>
+</div>
 {f'<p class="app-about">{esc(app["about"])}</p>' if app["about"] else ""}
-{f'<h2 class="section-title">Features</h2>{features(app)}' if app["features"] else ""}
+{f'<h2 class="section-title">Features</h2><div class="tint-scope"{tint(app["color"])}>{features(app)}</div>' if app["features"] else ""}
 {f'<h2 class="section-title">Price</h2><p>{esc(app["price"])}</p>' if app["price"] else ""}
 <h2 class="section-title">Support</h2>
 <p>Questions or feedback about {esc(name)}? Email us at <a href="mailto:{esc(email)}">{esc(email)}</a>.
